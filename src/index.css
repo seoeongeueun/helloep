@@ -3,14 +3,18 @@
 @theme {
   /* min width 기준 breakpoints */
   --breakpoint-*: initial;
-  --breakpoint-xs: 0px;
-  --breakpoint-sm: 429px;
-  --breakpoint-md: 639px;
-  --breakpoint-lg: 1023px;
+  --breakpoint-phone: var(--phone);
+  --breakpoint-phone_large: var(--phone_large);
+  --breakpoint-tablet: var(--tablet);
+  --breakpoint-desktop: var(--desktop);
 
   --text-xs: 1.4rem;
   --text-s: 1.5rem;
   --text-md: 2rem;
+
+  --size-headerH: var(--headerH);
+  --size-margin: var(--ep-margin);
+  --size-margin-s: var(--ep-margin-s);
 
   --color-black: var(--black);
   --color-white: var(--white);
@@ -30,14 +34,27 @@
   --black: #131313;
   --white: #e2e2e2;
   --gray: #787878;
+
+  --phone: 0px;
+  --phone_large: 429px;
+  --tablet: 639px;
+  --desktop: 1023px;
+
+  --ep-margin: 8px;
+  --ep-margin-s: 4px;
+  --headerH: 36px;
+}
+
+@media screen and (min-width: var(--tablet)) {
+  :root {
+    --ep-margin: 10px;
+    --ep-margin-s: 5px;
+    --headerH: 40px;
+  }
 }
 
 html {
   font-size: 16px !important;
-}
-
-*::-webkit-scrollbar {
-  display: none;
 }
 
 body,
@@ -46,4 +63,8 @@ html {
   height: 100%;
   background-color: var(--black);
   color: var(--white);
+}
+
+*::-webkit-scrollbar {
+  display: none;
 }
