@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@theme {
+  /* min width 기준 breakpoints */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 429px;
+  --breakpoint-md: 639px;
+  --breakpoint-lg: 1023px;
+
+  --text-xs: 1.4rem;
+  --text-s: 1.5rem;
+  --text-md: 2rem;
+
+  --color-black: var(--black);
+  --color-white: var(--white);
+  --color-gray: var(--gray);
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #131313;
+  --white: #e2e2e2;
+  --gray: #787878;
+}
+
+html {
+  font-size: 16px !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: var(--black);
+  color: var(--white);
+}
