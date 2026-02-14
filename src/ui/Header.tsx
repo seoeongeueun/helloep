@@ -1,0 +1,36 @@
+export function Header() {
+  return (
+    <header className="sticky top-0 font-inter text-gray text-m px-margin h-headerH border border-px border-gray">
+      <nav
+        className="flex flex-row justify-between items-center h-full"
+        aria-label="Primary"
+      >
+        <a
+          href="/"
+          aria-label="홈 페이지"
+          className="group text-white uppercase relative [&>span]:transition-opacity [&>span]:duration-150 [&>span]:group-hover:delay-100"
+        >
+          <span className="group-hover:opacity-0">EVERYDAY PRACTICE</span>
+          <span className="inset-0 absolute opacity-0 group-hover:opacity-100">
+            일상의실천
+          </span>
+        </a>
+
+        <div
+          className="gap-1 flex flex-row items-center"
+          aria-label="언어 변경"
+        >
+          <button type="button" className="active">
+            Kor
+          </button>
+          <span aria-hidden="true">/</span>
+          <button type="button">Eng</button>
+        </div>
+
+        <a href="mailto:hello@everyday-practice.com" aria-label="이메일 보내기">
+          hello@everyday-practice.com
+        </a>
+      </nav>
+    </header>
+  );
+}
