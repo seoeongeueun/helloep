@@ -11,15 +11,19 @@
 
   --text-xs: 1.4rem;
   --text-s: 1.5rem;
-  --text-md: 2rem;
+  --text-m: 2rem;
 
-  --size-headerH: var(--headerH);
-  --size-margin: var(--ep-margin);
-  --size-margin-s: var(--ep-margin-s);
+  --spacing-headerH: var(--headerH);
+  --spacing-margin: var(--ep-margin);
+  --spacing-margin-s: var(--ep-margin-s);
 
   --color-black: var(--black);
   --color-white: var(--white);
   --color-gray: var(--gray);
+
+  --font-pretendard:
+    pretendard, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-inter: inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
 :root {
@@ -56,7 +60,7 @@
 }
 
 html {
-  font-size: 16px !important;
+  font-size: 10px !important;
 }
 
 body,
@@ -69,4 +73,16 @@ html {
 
 *::-webkit-scrollbar {
   display: none;
+}
+
+button,
+a {
+  text-decoration: none;
+  transition: color 0.1s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover,
+button.active {
+  color: var(--white);
 }
