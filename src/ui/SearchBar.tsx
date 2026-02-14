@@ -1,4 +1,4 @@
-import { Dropdown } from "./Dropdown";
+import { Dropdown, Results } from "./index";
 export function SearchBar() {
   return (
     <section className="relative top-30 flex flex-row justify-between gap-4 px-margin">
@@ -25,7 +25,10 @@ export function SearchBar() {
           />
         </button>
       </form>
-      <Dropdown />
+      <div className="flex flex-row w-1/2 gap-4 ">
+        <Dropdown />
+        <Results />
+      </div>
     </section>
   );
 }
