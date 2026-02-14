@@ -1,8 +1,9 @@
+import { Dropdown } from "./Dropdown";
 export function SearchBar() {
   return (
     <section className="relative top-30 flex flex-row justify-between gap-4 px-margin">
       <form
-        className="flex flex-row bg-gray/10 border-b border-gray px-margin py-1 w-1/2"
+        className="flex flex-row bg-secondary border-b border-gray px-margin py-1 w-1/2"
         role="search"
         aria-label="검색"
       >
@@ -24,6 +25,7 @@ export function SearchBar() {
           />
         </button>
       </form>
+      <Dropdown />
     </section>
   );
 }
