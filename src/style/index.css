@@ -95,9 +95,9 @@ input:focus {
 }
 
 .open {
-  animation: fadeIn 0.3s ease-in-out forwards;
+  animation: fadeIn 0.2s ease-in-out forwards;
 }
 
 .closed {
-  animation: fadeOut 0.3s ease-in-out forwards;
+  animation: fadeOut 0.2s ease-in-out forwards;
 }
