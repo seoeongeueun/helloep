@@ -84,3 +84,7 @@ button:hover,
 button.active {
   color: var(--white);
 }
+
+input:focus {
+  outline: none;
+}
