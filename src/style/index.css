@@ -86,7 +86,8 @@ a {
 }
 
 button:hover,
-button.active {
+button.active,
+a:hover {
   color: var(--white);
 }
 

@@ -8,7 +8,7 @@ export function Header() {
         <a
           href="/"
           aria-label="홈 페이지"
-          className="group !text-white uppercase relative [&>span]:transition-opacity [&>span]:duration-150 [&>span]:group-hover:delay-100"
+          className="group uppercase text-white! relative [&>span]:transition-opacity [&>span]:duration-150 [&>span]:group-hover:delay-100"
         >
           <span className="group-hover:opacity-0">EVERYDAY PRACTICE</span>
           <span className="inset-0 absolute opacity-0 group-hover:opacity-100">
