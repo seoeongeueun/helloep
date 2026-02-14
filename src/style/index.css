@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "./fonts.css";
+@import "./animation.css";
 
 @theme {
   /* min width 기준 breakpoints */
@@ -21,6 +22,8 @@
   --color-white: var(--white);
   --color-gray: var(--gray);
   --color-black-80: rgba(19, 19, 19, 0.82);
+  --color-selected: var(--selected);
+  --color-secondary: var(--secondary);
 
   --font-pretendard:
     pretendard, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -41,6 +44,8 @@
   --black: #131313;
   --white: #e2e2e2;
   --gray: #787878;
+  --secondary: #222222;
+  --selected: #323232;
 
   --ep-margin: 8px;
   --ep-margin-s: 4px;
@@ -87,4 +92,12 @@ button.active {
 
 input:focus {
   outline: none;
+}
+
+.open {
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.closed {
+  animation: fadeOut 0.3s ease-in-out forwards;
 }
