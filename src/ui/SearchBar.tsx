@@ -1,7 +1,7 @@
 import { Dropdown, Results } from "./index";
 export function SearchBar() {
   return (
-    <section className="relative top-30 flex flex-row justify-between gap-4 px-margin">
+    <section className="flex flex-row justify-between gap-4 px-margin">
       <form
         className="flex flex-row bg-secondary border-b border-gray px-margin py-1 w-1/2"
         role="search"

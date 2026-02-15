@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <header className="sticky top-0 font-inter text-gray text-m px-margin h-headerH border border-px border-gray">
+    <header className="sticky top-0 font-inter text-gray text-m px-margin h-headerH border-b border-px border-gray z-50 bg-black">
       <nav
         className="flex flex-row justify-between items-center h-full"
         aria-label="Primary"
