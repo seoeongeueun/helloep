@@ -1,10 +1,11 @@
 import { Tag } from "../ui";
 
 export default function Card() {
+  //TODO: API 연동 후 랜덤 썸네일 제거
   const thumbnailSuffix = Math.random() > 0.5 ? "2" : "";
 
   return (
-    <article className="min-w- w-full h-full flex flex-col items-start justify-start gap-spacing-3">
+    <article className="w-full h-fit flex flex-col items-start justify-start gap-spacing-3 relative after:absolute after:inset-0 after:bg-black/50 after:z-30 after:opacity-0 hover:after:opacity-100 after:transition-opacity after:duration-200 cursor-pointer">
       <figure className="w-full">
         <img
           src={`/assets/sample_thumbnail${thumbnailSuffix}.png`}
