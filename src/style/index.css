@@ -10,6 +10,7 @@
   --breakpoint-tablet: 639px;
   --breakpoint-desktop: 1023px;
 
+  --text-xxs: 1.1rem;
   --text-xs: 1.4rem;
   --text-s: 1.5rem;
   --text-m: 2rem;
@@ -28,6 +29,10 @@
   --spacing-spacing-8: 0.8rem;
   --spacing-spacing-9: 0.9rem;
   --spacing-spacing-10: 1rem;
+  --spacing-spacing-12: 1.2rem;
+  --spacing-spacing-14: 1.4rem;
+  --spacing-spacing-16: 1.6rem;
+  --spacing-spacing-20: 2rem;
 
   --color-black: var(--black);
   --color-white: var(--white);
