@@ -34,7 +34,7 @@ export function Dropdown() {
         aria-haspopup="true"
         aria-expanded={isOpen}
       >
-        <span className="text-white ">Year</span>
+        <span className="text-white pointer-events-none">Year</span>
         <img
           src="/icons/icon_arrow.svg"
           alt="드롭다운"
