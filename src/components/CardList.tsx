@@ -3,13 +3,13 @@ import { SearchBar } from "../ui";
 
 export default function CardList() {
   return (
-    <main className="relative top-30 px-margin flex flex-col gap-[7.4rem]">
+    <main className="relative top-30 px-margin flex flex-col">
       <SearchBar />
-      <div className="flex flex-wrap gap-spacing-10">
+      <section className="grid grid-cols-4 gap-spacing-10 py-[5rem]">
         {Array.from({ length: 7 }, (_, i) => (
           <Card key={i} />
         ))}
-      </div>
+      </section>
     </main>
   );
 }
