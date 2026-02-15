@@ -18,6 +18,17 @@
   --spacing-margin: var(--ep-margin);
   --spacing-margin-s: var(--ep-margin-s);
 
+  --spacing-spacing-1: 0.1rem;
+  --spacing-spacing-2: 0.2rem;
+  --spacing-spacing-3: 0.3rem;
+  --spacing-spacing-4: 0.4rem;
+  --spacing-spacing-5: 0.5rem;
+  --spacing-spacing-6: 0.6rem;
+  --spacing-spacing-7: 0.7rem;
+  --spacing-spacing-8: 0.8rem;
+  --spacing-spacing-9: 0.9rem;
+  --spacing-spacing-10: 1rem;
+
   --color-black: var(--black);
   --color-white: var(--white);
   --color-gray: var(--gray);
@@ -50,6 +61,9 @@
   --ep-margin: 8px;
   --ep-margin-s: 4px;
   --headerH: 36px;
+
+  --card-min-width: 230px;
+  --card-max-width: 
 }
 
 /* 타블렛 크기 이상 디바이스에서 적용되는 스타일 */
